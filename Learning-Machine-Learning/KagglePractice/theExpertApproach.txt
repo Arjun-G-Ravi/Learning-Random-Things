@@ -1,0 +1,16 @@
+1. Import necessary modules
+2. Create the dataFrame
+3. Exploratory data analysis (EDA)
+    3.1 df.describe()
+    3.2 df.info()
+    3.3 df.head()
+    3.4 df.isnull().sum() or df.isna().sum()
+    3.5 if null values are rare, ignore
+        else, you have to impute it with mean or something.
+    3.5 df.nunique()
+4. Data cleaning
+    4.1 Removing typos from df, etc
+    4.2 df.dtypes
+    4.3 Changing data types to more appropriate values
+5.Feature Engineering
+    5.1 
