@@ -7,7 +7,8 @@ public class _4_MethOverloading {
     }
     public static void main(String[] args) {
         _4_MethOverloading obj = new _4_MethOverloading();
-        System.out.println(obj.area(10));
-        System.out.println(obj.area(10,10));
+
+        System.out.println(obj.area(10));          // One parameter
+        System.out.println(obj.area(10,10));    // Two parameters
     }
 }

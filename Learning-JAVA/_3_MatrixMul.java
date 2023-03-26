@@ -12,6 +12,8 @@ public class _3_MatrixMul {
         System.out.println("Enter order of mat2:");
         m2 = sc.nextInt();
         n2 = sc.nextInt();
+        
+
         if (n1!=m2){
             System.out.println("Mul not possible");
         }
@@ -19,6 +21,8 @@ public class _3_MatrixMul {
             int a[][] = new int[m1][n1];
             int b[][] = new int[m2][n2];
             int c[][] = new int[m1][n2];
+
+            // Reading elements
             System.out.println("Enter elements of mat1:");
             for(int i=0; i<m1; i++){
                 for(int j=0; j<n1; j++){
@@ -33,7 +37,9 @@ public class _3_MatrixMul {
                     b[i][j]=temp;
                 }
             }
+            sc.close();
 
+            // Multiplication
             for(int i=0; i<m1; i++){
                 for(int k=0; k<n2; k++){
                     c[i][k]=0;
@@ -42,12 +48,17 @@ public class _3_MatrixMul {
                     }
                 }
             }
-            System.out.println("Product is :");
+
+            // Display
+            System.out.println("\nProduct matrix is :\n");
+            System.out.printf("[ ");
             for(int i=0; i<m1; i++){
                 for(int j=0; j<n2; j++){
-                    System.out.println(c[i][j]);
+                    System.out.printf(c[i][j] + " ");
                 }
+                System.out.printf("\n  ");
             }
+            System.out.printf("]");
 
     }
     }

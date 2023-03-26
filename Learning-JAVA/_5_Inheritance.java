@@ -36,16 +36,21 @@ class Manager extends Employee{
         System.out.println("Enter bonus:");
         bonus = sc.nextInt();
     }
+    void print_details(){
+        System.out.println("Name:"+name);
+        System.out.println("Age:"+age);
+        System.out.println("Salary:"+salary);
+        System.out.println("Bonus:"+bonus);
+    }
 }
 
 public class _5_Inheritance {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        Employee[] empArr = new Employee[10];
-        Manager[] manArr = new Manager[10];
 
         Employee emp1 = new Employee();
-        Employee emp2 = new Employee();
+        Employee emp2 = new Manager();
+
+
         emp1.enter_details();
         emp1.enter_details();
         
